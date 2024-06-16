@@ -1,0 +1,102 @@
+/* Fonts */
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-bold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-black.woff2');
+    font-weight: 900;
+}
+/* Variables */
+:root {
+    --font-color: #000000;
+    --primary-color: #E95420;
+    --background-color: #FFFFFF;
+}
+/* Body */
+html, body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.6;
+}
+@media screen and (min-width: 500px) and (min-height: 500px) {
+    html, body {
+        font-size: 20px;
+   }
+}
+@media screen and (min-width: 1000px) and (min-height: 800px) {
+    html, body {
+        font-size: 22px;
+   }
+}
+/* Links */
+a:link, a:visited {
+    color: var(--primary-color);
+}
+/* Layout */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+/* Code */
+.code {
+    display: block;
+    margin: 1rem 0 0;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    background-color: #F1F1F1;
+}
+/* Top */
+.top {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 5rem 0 3rem;
+    margin: 0 0 2rem;
+}
+.top .container {
+    max-width: 750px;
+}
+.top img {
+    width: 100px;
+    margin: 0;
+}
+.top h1 {
+    margin-top: 0.5em;
+    font-size: 2.5em;
+    line-height: 1.25;
+}
+.top p {
+    margin-top: -1em;
+    font-size: 1em;
+    font-weight: 600;
+}
+/* Main */
+.main h3 {
+    margin: 2rem 0 0;
+}
+.main img {
+    width: 200px;
+    margin: 1rem 0 0;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 5rem 0 2rem;
+    line-height: 1;
+}
